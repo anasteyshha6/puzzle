@@ -1,0 +1,77 @@
+@import url(font.css);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+body{
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+section{
+    background-image: url(../img/фон.png);
+    background-size: cover;
+}
+
+.container_big{
+    width: 1366px;
+    margin: 0 auto;
+}
+
+.zagol{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 95px 200px;
+}
+
+h1{
+    font-family: 'Mon';
+    font-size: 30px;
+}
+
+h2{
+    font-family: 'Mon';
+    font-size: 20px;
+    padding-top: 10px;
+    font-weight: 500;
+}
+
+.photo-puzzle{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+img{
+    width: 700px;
+    height: 200px;
+}
+
+form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    text-align: start;
+    width: 18%;
+    padding: 15px 100px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
