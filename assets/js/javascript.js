@@ -3,20 +3,20 @@ const buttonNode = document.querySelector('.js-button');
 const outputNode = document.querySelector('.js-output');
 
 let currAnswer = 'а роза упала на лапу азора';
-let corrAnswer = 'Правильно!';
-let errorAnswer = 'Неверно)'
+let corrAnswer = 'ПРАВИЛЬНО!';
+let errorAnswer = 'НЕВЕРНО)'
 buttonNode.addEventListener('click', function () {
     const inputValue = inputNode.value;
     if (!inputValue) {
         return
     }
 
-    const answer = inputNode.value;
-    let output = corrAnswer;
+    const userAnswer = inputNode.value;
 
-    if (answer !== currAnswer.toLowerCase()) {
-        output = errorAnswer;
+    if (userAnswer.toLowerCase() === currAnswer) {
+        outputNode.textContent = corrAnswer;
+    } else {
+        outputNode.textContent = errorAnswer;
     }
 
-    outputNode.innerHTML = output;
 });
