@@ -22,7 +22,6 @@ section{
 }
 
 .container_big{
-    width: 1366px;
     margin: 0 auto;
 }
 
@@ -33,7 +32,7 @@ section{
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 95px 200px;
+    padding: 74px;
 }
 
 h1{
@@ -53,18 +52,18 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 100px;
+    padding-bottom: 40px;
 
 }
 
 img{
     width: 700px;
-    height: 200px;
+    height: 300px;
     border: 3px solid #FBC9C0;
     border-radius: 45px;
 }
 
-form{
+.question{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -75,12 +74,16 @@ form{
 input{
     text-align: start;
     width: 18%;
-    padding: 15px 100px;
+    padding: 15px;
     border: 2px solid #76a3ee;
     border-radius: 20px;
+    font-family: 'Mon';
+    font-size: 15px;
+    font-weight: 400;
+    color: #2d41a1;
 }
 
-.button {
+button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -94,14 +97,14 @@ input{
     background-image: linear-gradient(to left, #84fab0 0%, #8fd3f4 100%, #84fab0 100%);
 }
 
-.button:hover{
+button:hover{
     transition: 0.8s;
     background-image: linear-gradient(to left, #5ea47b 0%, #476a7a 100%, #407a57 100%);
 }
 
-.button a{
+button{
     font-family: 'Mon';
     font-size: 15px;
-    font-weight: 500;
-    color: white;
+    font-weight: 700;
+    color: #2d41a1;
 }

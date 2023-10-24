@@ -1,14 +1,22 @@
-function check(){
-    // получаем значение поля key
-    let rebus = document.send;
-    let val = rebus.value;
-    // получаем элемент printBlock
-    let printBlock = document.getElementById("checkRebus");
-    // создаем новый параграф
-    let pElement = document.createElement("p");
-    // устанавливаем у него текст
-    pElement.textContent = 'Правильно!';
-    // добавляем параграф в printBlock
-    printBlock.appendChild(pElement);
-}
-check()
+const inputNode = document.querySelector('.js-input');
+const buttonNode = document.querySelector('.js-button');
+const outputNode = document.querySelector('.js-output');
+
+let currAnswer = 'а роза упала на лапу азора';
+let corrAnswer = 'Правильно!';
+let errorAnswer = 'Неверно)'
+buttonNode.addEventListener('click', function () {
+    const inputValue = inputNode.value;
+    if (!inputValue) {
+        return
+    }
+
+    const answer = inputNode.value;
+    let output = corrAnswer;
+
+    if (answer !== currAnswer.toLowerCase()) {
+        output = errorAnswer;
+    }
+
+    outputNode.innerHTML = output;
+});
